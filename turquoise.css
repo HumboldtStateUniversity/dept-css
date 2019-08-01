@@ -1,0 +1,659 @@
+/* removes hoziontal scrollbar when using the .full-width class */
+html,
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+/*******************************************************/
+/************ OpenHSU Colors and Overrides *************/
+/*******************************************************/
+
+
+/* HSU wordmark svg */
+.hsu-humboldt {
+  fill: #381E10;
+}
+.hsu-state-university {
+  fill: #543E2A;
+}
+
+/* A-Z & quicklinks hover */
+.hsu-header-links li a:focus,.hsu-header-links li a:hover {
+  background: #28767D;
+}
+
+/* site header color */
+.hsu-header{
+  background: #28767D;
+  padding: 10px; /* add to distro */
+}
+
+/* Search bar */
+.searchbox-icon, .searchbox-submit {
+  background: #28767D;
+}
+.searchbox-icon:hover, .searchbox-icon:focus, .searchbox-submit:hover, .searchbox-submit:focus {
+  background: #28767D;
+}
+
+/* Navbar & Footer color */
+.navbar-default, .footer-wrapper {
+  background-color: #362410;
+}
+
+/* Change main background color to beige */
+#main-wrapper, #main-wrapper  {
+    background: #EDE7DF;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 60px;
+}
+
+/* circle h in footer */
+.circleh-color {
+ fill: #13464A;
+}
+
+/* Social icons */
+.social a {
+  color: #28767D;
+  background: #fff;
+}
+.social a:hover {
+  background: #28767D;
+  color: #fff;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6, .light {
+  color: #381E10;
+  font-weight: 300 !important;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h1.page-header {
+  margin-top: 16px; /* pulls page-header up for even spacing */
+}
+
+blockquote {
+  border-left: 3px solid #13464A;
+}
+
+/* Links */
+a {
+  transition: 0.2s; /* add to distro ? */
+  color: #28767D;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #381E10;
+}
+
+/*  Department of in site name */
+span.dept-of {
+  color: #fff;
+  font-size: 22px;
+  margin: 0px 0 6px 4px;
+  display: block;
+}
+
+hr {
+  border: .5px solid #aaa;
+  height: 1px;
+}
+
+/* Button Primary - color change and minor edits - copied from OpenHSU */
+.btn-primary, .fake-ok {
+    background-color: #13464A;
+    border-color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+  color: #13464A;
+  background-color: #fff;
+  border-color: #13464A;
+}
+.open > .dropdown-toggle.fake-ok {
+  background-color: #28767D;
+  border-color: #000;
+}
+
+
+/* Button CTA */
+.btn-cta {
+  background-color: #5C8021;
+  border-color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+.btn-cta:hover, .btn-cta:focus, .btn-cta:active, .btn-cta.active, .open > .btn-cta.dropdown-toggle {
+  color: #5C8021;
+  background-color: #fff;
+  border-color: #5C8021;
+}
+
+/* Drupal edit buttons at the top of the page */
+/* copied _navs.scss (bootstrap partial lines 133) */
+
+.nav-pills > li.active > a {
+  background-color: #13464A;
+}
+.nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #28767D;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+/* Pagination copied from OpenHSU */
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #28767D;
+  border-color: #13464A;
+  cursor: default;
+}
+.pagination > li > a, .pagination > li > span {
+color: #13464A;
+}
+
+/* HSU People Overrides */
+.color-wrap.clearfix {
+  background: #fff;
+  padding: 30px 20px 0;
+  border-radius: 4px;
+  min-height: 260px;
+}
+.people-contact li:before {
+  color: #28767D;
+}
+.people-list h3 {
+  font-size: 25px;
+}
+.people-list h4 {
+  font-size: 18px;
+}
+.people-list h3 a:after {
+    content: none;
+}
+
+.people-wrap h4 {
+  border-bottom: 1px solid #7d6f62;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.people-alpha .view-content > h3 {
+  color: #381E10;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 3rem 0 1rem;
+  position: relative;
+  padding: 0 .25rem;
+  clear:both;
+}
+.people-alpha .people-list {
+margin: 0 0 30px;
+}
+.people-list img, .field-name-field-hsu-people-profile-image img {
+border: 0px;
+padding: 0px;
+background: none;
+outline: solid 3px #fff;
+-webkit-box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.45);
+-moz-box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.45);
+box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.45);
+margin-bottom: 30px;
+max-height: 175px;
+}
+.people-alpha .view-content > h3:before {
+  border: none;
+}
+
+
+/*   OpenHSU Well overrides */
+.well {
+  /* min-height: 20px;*/
+  padding: 30px;
+  /* margin-bottom: 20px;  */
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  /* border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); */
+}
+
+
+/*accordion overrides*/
+.accordion-content h2:first-child, .accordion-content h3:first-child, .accordion-content h4:first-child {
+  margin-top: 1rem;
+}
+h4.ui-accordion-header.ui-state-default {
+  background: #fff;
+}
+.ui-accordion .ui-widget-content {
+  background: #f6f6f6;
+}
+
+
+/**************** SHAMEFUL HACKINESS ******************/
+
+
+/* Panels IPE has a width of 75px on its h3 which makes the region header break */
+div.panels-ipe-placeholder h3 {
+  width: 100% !important;
+}
+
+/* removing top margin on headings */
+.no-top-margin {
+  margin-top: 0px;
+}
+
+/* Hack to pull content up for overlap */
+.pull-up {
+  margin-top: 0px;
+}
+@media (min-width: 992px) {
+  .pull-up{
+    margin-top: -60px;
+  }
+  .front .pull-up{
+    margin-top: -105px;
+  }
+}
+
+/* ?????????? */
+
+.btn-trans {
+  border-color: #fff;
+}
+.btn-trans:hover {
+  background: #13464A;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #13464A;
+  border-radius: 5px;
+}
+
+
+/*******************************************************/
+/********************* FULL WIDTH **********************/
+/***************** PORT TO OpenHSU? ********************/
+
+
+/* Full width content containers span width of browser */
+.full-width, .full-width-full{
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.full-width-dark{
+  background: #28767D;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.45);
+  padding: 30px 0;
+
+}
+.full-width-light {
+  background: #FFF;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+  padding: 30px 0;
+}
+
+/* full width container - css class appiled with Kalacustomize */
+.full-width > .pane-content, .full-width .view-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.full-width > .pane-content:before, .full-width > .pane-content:after {
+  content: " ";
+  display: table;
+}
+.full-width > .pane-content:after {
+  clear: both;
+}
+  @media (min-width: 768px) {
+    .full-width > .pane-content {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .full-width > .pane-content {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .full-width > .pane-content {
+      width: 1230px;
+    }
+  }
+
+  /* full width container for region, css class APPLIED IN LAYOUT FILE */
+.full-width .full-width-container, .full-width .view-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.full-width .full-width-container:before, .full-width .pane-content:after {
+  content: " ";
+  display: table;
+}
+.full-width .full-width-container:after {
+  clear: both;
+}
+  @media (min-width: 768px) {
+    .full-width .full-width-container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .full-width .full-width-container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .full-width .full-width-container {
+      width: 1230px;
+    }
+  }
+
+
+/* override for text color on full-width-dark */
+.full-width-dark h1, .full-width-dark h2, .full-width-dark h3, .full-width-dark h4, .full-width-dark h5, .full-width-dark h6, .full-width-dark p, .full-width-dark li {
+  color: #fff !important;
+  margin: 10px 0;
+  max-width: 1000px;
+}
+
+.full-width h4.pane-title, .full-width-dark h4.pane-title {
+  max-width: 100%;
+}
+
+.full-width-dark a:link {
+  text-decoration: underline;
+}
+
+.full-width-dark a.btn:link {
+  text-decoration:none;
+}
+
+.full-width-dark a:link, .full-width-dark a:visited, .full-width-dark a:hover {
+  color: #fff;
+}
+/* button hover - fix text color */
+.full-width-dark .btn:hover {
+    color: #13464A;
+}
+
+.full-width-dark a:hover {
+  text-decoration: none;
+}
+
+/* override for headers on full-width-light to have equal margin and max width*/
+.full-width-light h1, .full-width-light h2, .full-width-light h3, .full-width-light h4, .full-width-light h5, .full-width-light h6, .full-width-light p, .full-width-light li {
+  margin: 10px 0;
+  max-width: 1000px;
+}
+
+
+/*********************************************************/
+/************ CNRS Theme - Structural Additions **********/
+/*********************************************************/
+
+
+
+/************  HOMEPAGE  ***********/
+.front .photo {
+  border: 1px solid #fff;
+}
+.photo img {
+  display: block;
+  width: 100%;
+}
+
+/* main intro text */
+
+.main-intro-text{
+  font-size: 24px;
+  line-height: 1.5em;
+  font-weight: 300;
+  padding-left: 20px;
+  /* background: #fff;
+  padding: 20px; */
+  /* margin-left: -30px; */
+  /* padding-right: 100px; */
+  /* margin-top: 0px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.25); */
+  /* opacity: 1; */
+
+}
+  @media (min-width: 768px) {
+    .main-intro-text {
+      padding-left: 0px;
+      padding-top: 20px;
+    }
+  }
+  @media (min-width: 992px) {
+    .main-intro-text {
+      font-size: 20px;
+      padding-top: 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .main-intro-text {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+  }
+.main-intro-text p {
+  margin: 0 0 8px;
+}
+
+/* Full width CTA banner padding and margin - under main photo */
+.hero-cta {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .hero-cta {
+    margin-top: -20px;
+  }
+}
+
+/* Why this program home page sidebar styles */
+
+.why-home h3 {
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(40, 118, 125, .333);
+  /* text-shadow: #13464a 0.25px 0.25px 0.25px; */
+}
+
+.why-home h3:after {
+  content: "  \f101";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: rgba(40, 118, 125, .5);
+}
+
+/* Achievements */
+.achievement {
+    border-top: 1px solid #aaa;
+    padding-top: 1px;
+    margin-top: 25px;
+}
+.type {
+    color: black;
+    background-color: #eee;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    font-size: 12px;
+}
+  .involved {
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 0;
+}
+
+/*  Hacking the output that comes with the alumni-update description field */
+.alumni-update p:first-child {
+  margin-bottom: -10px;
+}
+.alumni-update {
+  margin-bottom: 30px;
+}
+
+
+
+/* Internal pages photo strip styles */
+.photostrip {
+  margin-top: -15px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .photostrip{
+    display: none;
+  }
+}
+.photostrip .col-sm-2 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Photo Block */
+
+.photo-block {
+  background: #EDE7DF;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
+}
+.photo-block ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.photo-block li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.photo-block img {
+  height: 100px;
+  width: auto;
+}
+@media (max-width: 455px) {
+  .photo-block img {
+    display: none;
+  }
+}
+@media (min-width: 456px) {
+  .photo-block img {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .photo-block img {
+    height: 125px;
+  }
+}
+@media (min-width: 992px) {
+  .photo-block img {
+    height: 175px;
+  }
+}
+@media (min-width: 1380px) {
+  .photo-block img {
+    height: 200px;
+  }
+}
+
+
+/* Alumni Profile Overrides */
+.alumni-view-full-width.dark {
+  background: #28767D;
+}
+
+.dark .alumni-full-width-title h4.title-text {
+  color: #13464A !important;
+}
+
+.alumni-view-full-width.dark .btn {
+  background: #13464A;
+  border: 1px solid #fff;
+}
+
+.alumni-view-full-width.dark .btn:hover {
+    background: #fff;
+    color: #13464A;
+}
+
+.light .alumni-full-width-title {
+  background: #28767D;
+}
+
+.alumni-card {
+  background: #fff;
+}
+
+/* unused .featured-home .facility styles */
+.featured-home .facility {
+  margin: 20px 0;
+}
+.featured-home .facility a {
+  transition: .5s;
+  transform: scale(1);
+  background: #28767D;
+  padding: 1px 1px 6px;
+  color: #fff;
+  display: block;
+}
+.featured-home .facility a:hover {
+  transform: scale(1.025);
+  color: #eee;
+  background: #13464A;
+}
+.featured-home .facility img {
+  /* outline: solid 5px #fff;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.45);
+  */
+
+}
+.featured-home .facility-title {
+  font-size: 16px;
+  text-align: center;
+}
