@@ -687,3 +687,63 @@ div.panels-ipe-placeholder h3 {
   color: #aaa;
   margin: 0 0 -6px -32px;
 }
+
+/* secondary nav */
+.pane-menu-tree ul {
+  background: #28767D;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pane-menu-tree li.first ul a {
+  border-bottom: 0;
+}
+
+.pane-menu-tree ul ul {
+  padding: 20px;
+  /* background: #28767d; */
+  border-left: solid 5px rgba(255, 255, 255, 0.4);
+}
+
+.pane-menu-tree a {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  transition: initial;
+  text-decoration: none;
+  border-left: solid 5px transparent;
+}
+
+.pane-menu-tree a.active,
+.pane-menu-tree a.active:hover {
+  background: #13464A;
+  color: #fff;
+  border-left: solid 5px rgba(255, 255, 255, 0.5);
+}
+
+.pane-menu-tree a:hover {
+  background: #13464A;
+  border-left: solid 5px rgba(255, 255, 255, 0.5);
+}
+
+.pane-menu-tree li ul a {
+  color: #13464A;
+}
+
+.pane-menu-tree li ul a:hover {
+  background: #fff;
+}
+
+.pane-menu-tree li {
+  border-bottom: solid 1px #fff;
+}
+
+.pane-menu-tree li ul li {
+  background: #abc4c8;
+  border-bottom: 1px solid #72523C;
+}
+
+.pane-menu-tree li:last-child {
+  border-bottom: 0;
+}
