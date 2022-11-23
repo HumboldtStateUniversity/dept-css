@@ -1,4 +1,22 @@
-/* removes hoziontal scrollbar when using the .full-width class */
+/* Colors for Reference */
+
+/*
+Cal Poly Humboldt wordmark:
+  dark brown: #381E10
+  light brown: #543E2A
+
+content colors:
+  light green (primary color): #5C8021
+  dark green (secondary color, btn-primary): #25551b
+  dark brown (nav, link:hover): #362410
+  brick (btn-cta, link, circle h, social): #B65300
+
+ONE OFF - WHY HOME - RGBA for transparency \/''\/
+  dark orange - h3 border bottom: rgba(182, 83, 0, .333);
+  light orange - h3:after: color: rgba(182, 83, 0, .5);
+ */
+
+/* removes horizontal scrollbar when using the .full-width class */
 html,
 body {
   overflow-x: hidden;

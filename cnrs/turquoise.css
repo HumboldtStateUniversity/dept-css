@@ -1,3 +1,21 @@
+/* Colors for Reference */
+
+/*
+Cal Poly Humboldt wordmark:
+  dark brown: #381E10
+  light brown: #543E2A
+
+content colors:
+  light turquoise (primary color, link, social): #28767D
+  dark turquoise (secondary color, btn-primary, circle h): #13464A
+  dark brown (nav, footer, link:hover): #362410
+  light green (btn-cta): #5C8021
+
+ONE OFF - WHY HOME - RGBA for transparency \/''\/
+  dark turquoise - h3 border bottom: rgba(40, 118, 125, .333);
+  light turquoise - h3:after: rgba(40, 118, 125, .5);
+ */
+
 /* removes hoziontal scrollbar when using the .full-width class */
 html,
 body {
