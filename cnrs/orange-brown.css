@@ -2,18 +2,18 @@
 
 /*
 Cal Poly Humboldt wordmark:
-  dark brown: #381E10
-  light brown: #543E2A
+  #381E10     dark brown
+  #543E2A     light brown
 
 content colors:
-  orange (primary color, link): #b65300
-  light brown (secondary color): #72523C
-  dark brown (nav, footer, btn-primary, link:hover): #362410
-  light green (btn-cta, circle h, social): #5C8021
+  #b65300     orange (primary color, link)
+  #72523C     light brown (secondary color)
+  #362410     dark brown (nav, footer, btn-primary, link:hover)
+  #5C8021     light green (btn-cta, circle h, social)
 
 ONE OFF - WHY HOME - RGBA for transparency \/''\/
-  dark orange - h3 border bottom: rgba(182, 83, 0, .333);
-  light orange - h3:after: color: rgba(182, 83, 0, .5);
+  rgba(182, 83, 0, .333);     dark orange - h3 border bottom
+  rgba(182, 83, 0, .5);       light orange - h3:after
  */
 
 /* removes horizontal scrollbar when using the .full-width class */
